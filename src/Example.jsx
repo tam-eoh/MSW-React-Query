@@ -15,9 +15,13 @@ const Example = () => {
     queryFn: fetchData,
   });
 
-  console.log("data example", data);
+  console.log("222222", data);
 
-  return <div>Example</div>;
+  return (
+    <div>
+      <h1>name: {data?.name}</h1>
+    </div>
+  );
 };
 
 export default Example;
