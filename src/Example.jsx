@@ -4,7 +4,7 @@ import axios from "axios";
 
 const fetchData = async () => {
   const { data } = await axios.get("https://api.example.com/user");
-  console.log("111111", data);
+  console.log("fetchData", data);
 
   return data;
 };
@@ -15,7 +15,7 @@ const Example = () => {
     queryFn: fetchData,
   });
 
-  console.log("222222", data);
+  console.log("re-render", data);
 
   return (
     <div>
